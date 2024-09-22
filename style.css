@@ -1,8 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c9bf6a;
+    margin: 16px;
+}
+
 h1,
 h2,
 h3 {
-    background-color: black;
-    color: white;
+    color: rgb(59, 43, 43);
 }
 
 img {
@@ -13,14 +29,39 @@ img {
     width: 50%;
 }
 
-a {
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 1.8;
+.menu {
+    text-align: center;
 }
 
-li,
-p {
-    font-weight: 700;
-    line-height: 1.5;
+.menu li  {
+    font-size: 24px;
+    font-weight: 800;
+    list-style: none;
+    display: inline-block;
+    margin: 16px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.description,
+.ingredients {
+
+    margin-bottom: 8px;
+}
+
+.description p {
+    padding: 8px 0;
+}
+
+.ingredients li {
+    padding: 8px 0;
+    margin: 0 16px;
+}
+
+.steps li {
+    padding: 8px 0;
+    margin: 0 16px;
 }
